@@ -1,0 +1,21 @@
+@import "colors";
+
+body {
+  font-family: sans-serif;
+  background-color: $light-blue;
+  margin: 0px;
+}
+.wrapper {
+  width: 80%;
+  margin: 0 auto;
+}
+h1 {
+  color: $dark-grey;
+}
+h2 {
+  color: $dark-grey;
+}
+p {
+  color: $light-grey;
+  font-family: sans-serif;
+}
