@@ -1,4 +1,4 @@
-console.log("Hello!");
+/*console.log("Hello!");
 console.log("How are you?");
 console.log(78);
 console.log(false);
@@ -40,3 +40,59 @@ var testObject = {
 };
 
 testObject.eats();
+
+*/
+
+
+var bood = document.getElementById('bood');
+var boodWeight = 5;
+bood.style.backgroundColor = "red";
+function feedBood(){
+  boodWeight ++;
+  if (boodWeight>5 && boodWeight<7) {
+    bood.src="Images/fatPug.jpg"
+  } else if (boodWeight<1){
+    bood.src="Images/skellyPug.jpg"
+  } else if (boodWeight<2){
+    bood.src="Images/skinnyPug.jpg"
+  } else if (boodWeight==5){
+    bood.src="Images/normalPug.jpg"
+  } else if (boodWeight=>7){
+    bood.src="Images/skellyPug.jpg"
+  } else {
+    bood.src="Images/normalPug.jpg"
+  }
+  console.log(boodWeight);
+};
+
+function starveBood(){
+  boodWeight --;
+  if (boodWeight>5 && boodWeight<9) {
+    bood.src="Images/fatPug.jpg"
+  } else if (boodWeight<1){
+    bood.src="Images/skellyPug.jpg"
+  } else if (boodWeight<3){
+    bood.src="Images/skinnyPug.jpg"
+  } else if (boodWeight===5){
+    bood.src="Images/normalPug.jpg"
+  } else if (boodWeight=>9){
+    bood.src="Images/skellyPug.jpg"
+  } else {
+    bood.src="Images/normalPug.jpg"
+  }
+  console.log(boodWeight);
+};
+
+/*
+if (boodWeight==0) {
+  bood.src="Images/skellyPug.jpg"
+} else if (boodWeight<3){
+    bood.src="Images/skinnyPug.jpg"
+}else if (boodWeight<7){
+    bood.src="Images/normalPug.jpg"
+}else if (boodWeight<9){
+    bood.src="Images/fatPug.jpg"
+}else (){
+    bood.src="Images/skellyPug.jpg"
+}
+*/
