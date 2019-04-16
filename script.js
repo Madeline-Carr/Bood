@@ -1,27 +1,30 @@
-var bood = document.getElementById("bood");
-var boodWeight = 5;
+let boodElement = document.getElementById("boodElement");
 
-function showBood() {
-  if (boodWeight > 6) {
-    bood.src = "Images/skellyPug.jpg";
-  } else if (boodWeight > 5) {
-    bood.src = "Images/fatPug.jpg";
-  } else if (boodWeight > 4) {
-    bood.src = "Images/normalPug.jpg";
-  } else if (boodWeight > 3) {
-    bood.src = "Images/skinnyPug.jpg";
-  } else if (boodWeight > 2) {
-    bood.src = "Images/skellyPug.jpg";
+let bood = {
+  weight: 5,
+  showBood: function() {
+    if (this.weight > 7) {
+      boodElement.src = "Images/skellyPug.jpg";
+    } else if (this.weight > 5) {
+      boodElement.src = "Images/fatPug.jpg";
+    } else if (this.weight > 4) {
+      boodElement.src = "Images/normalPug.jpg";
+    } else if (this.weight > 3) {
+      boodElement.src = "Images/skinnyPug.jpg";
+    } else if (this.weight > 1) {
+      boodElement.src = "Images/skellyPug.jpg";
+    }
   }
-}
+};
+
 function feedBood() {
-  boodWeight++;
-  showBood();
-  console.log(boodWeight);
+  bood.weight++;
+  bood.showBood();
+  console.log(bood.weight);
 }
 
 function starveBood() {
-  boodWeight--;
-  showBood();
-  console.log(boodWeight);
+  bood.weight--;
+  bood.showBood();
+  console.log(bood.weight);
 }
