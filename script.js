@@ -1,5 +1,7 @@
+//Variables
 let boodElement = document.getElementById("boodElement");
 
+//Objects
 let bood = {
   weight: 5,
   showBood: function() {
@@ -14,17 +16,15 @@ let bood = {
     } else if (this.weight > 1) {
       boodElement.src = "Images/skellyPug.jpg";
     }
+  },
+  feedBood: function() {
+    this.weight++;
+    this.showBood();
+    console.log(this.weight);
+  },
+  starveBood: function() {
+    this.weight--;
+    this.showBood();
+    console.log(this.weight);
   }
 };
-
-function feedBood() {
-  bood.weight++;
-  bood.showBood();
-  console.log(bood.weight);
-}
-
-function starveBood() {
-  bood.weight--;
-  bood.showBood();
-  console.log(bood.weight);
-}
