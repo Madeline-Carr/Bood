@@ -1,5 +1,6 @@
 @import "colors";
 
+//Global
 body {
   font-family: sans-serif;
   background-color: $light-blue;
@@ -9,6 +10,7 @@ body {
   width: 70%;
   margin: 0 auto;
 }
+
 h1 {
   color: white;
   background-color: $dark-grey;
@@ -25,7 +27,7 @@ p {
   font-family: sans-serif;
 }
 
-img{
+img {
   margin: 0 auto;
   display: block;
   min-height: 400px;
@@ -33,7 +35,7 @@ img{
   border-radius: 10px;
 }
 
-button{
+button {
   border-radius: 15px;
   color: white;
   display: block;
@@ -44,7 +46,8 @@ button{
   height: 30px;
   font-size: 15px;
   width: 50%;
-
 }
 
-button:focus {outline:0;}
+button:focus {
+  outline: 0;
+}

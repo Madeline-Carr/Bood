@@ -20,11 +20,11 @@ let bood = {
   feedBood: function() {
     this.weight++;
     this.showBood();
-    console.log(this.weight);
+    // console.log(this.weight);
   },
   starveBood: function() {
     this.weight--;
     this.showBood();
-    console.log(this.weight);
+    //console.log(this.weight);
   }
 };
